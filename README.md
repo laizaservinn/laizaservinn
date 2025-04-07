@@ -22,16 +22,9 @@ Sou uma desenvolvedora iniciante apaixonada por aprender novas tecnologias e res
 
 ---
 
-### 📂 Meus Projetos
-
-- [**Meu primeiro projeto**](link_do_repositorio)  
-  Um site simples feito com HTML e CSS, onde aprendi a estruturar e estilizar páginas web.
-
----
-
 ### 📫 Como me encontrar
 
-- **LinkedIn**: [seulinkedin]([https://www.linkedin.com/in/seunome](https://www.linkedin.com/in/l%C3%A1iza-servin-2020a41a8/)
+- **LinkedIn**: ([https://www.linkedin.com/in/seunome](https://www.linkedin.com/in/l%C3%A1iza-servin-2020a41a8/)
 - **Email**: [laizadservin@gmail.com](mailto:laizadservin@gmail.com)
 
 ---
