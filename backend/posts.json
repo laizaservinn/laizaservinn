@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Aprendendo o HTML",
+        "content": "HTML é uma base de toda página web. Entenda seu conceito e de como usá-la corretamente."
+    },
+    {
+        "title": "Dominando o CSS",
+        "content": "CSS permite estilizar páginas web. Aprenda como criar layouts modernos e responsivos."
+    },
+    {
+        "title": "Introdução ao JavaScript",
+        "content": "JavaScript adiciona interatividade às páginas. Descubra como manipular elementos e eventos."
+    }
+]
