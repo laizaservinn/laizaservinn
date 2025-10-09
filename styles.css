@@ -119,3 +119,8 @@ footer {
     width: 100%;
   }
 }
+
+.dark {
+  background: linear-gradient(135deg, var(--verde-claro), var(--fundo-escuro));
+  color: var(--texto-escuro);
+}
