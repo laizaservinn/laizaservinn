@@ -1,91 +1,53 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [posts, setPosts] = useState([]);
+  const [novoPost, setNovoPost] = useState({ title: "", content: "" });
 
-  const themeToggle = document.getElementById("theme-toggle");
+  // Carrega posts da API
+  useEffect(() => {
+    axios.get("http://localhost:3001/posts")
+      .then(res => setPosts(res.data))
+      .catch(err => console.error(err));
+  }, []);
 
-  themeToggle.addEventListener("click", () => {
-    console.log('Tema alternado!');
-    document.body.classList.toggle("dark");
-    themeToggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
-  });
-
-  // Filtro de posts
-  const searchInput = document.getElementById("search");
-  const posts = document.querySelectorAll(".post");
-
-  searchInput.addEventListener("input", (e) => {
-    const termo = e.target.value.toLowerCase();
-    posts.forEach((post) => {
-      const texto = post.textContent.toLowerCase();
-      post.style.display = texto.includes(termo) ? "block" : "none";
-    });
-  });
+  // Adiciona novo post
+  const addPost = async () => {
+    try {
+      const res = await axios.post("http://localhost:3001/posts", novoPost);
+      setPosts([...posts, res.data]);
+      setNovoPost({ title: "", content: "" });
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
   return (
-    <>
-      {/* <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React laiza</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
+    <div style={{ padding: "2rem" }}>
+      <h1>📋 Lista de Posts</h1>
 
-      <h1>Blog Estático </h1>
-      <nav>
-        <div class="actions">
-          <input type="text" id="search" placeholder="Buscar post..."></input>
-          <button id="theme-toggle">  Alternar Tema</button>
-        </div>
-      </nav>
-      <main>
-        <section id="sobre">
-          <h2>Sobre</h2>
-          <p>Sejam bem vindos! Aqui trago algumas ideias, tutoriais e curiosidades sobre o desenvolvimento web e tecnologia.</p>
-        </section>
+      <input
+        placeholder="Título"
+        value={novoPost.title}
+        onChange={(e) => setNovoPost({ ...novoPost, title: e.target.value })}
+      />
+      <input
+        placeholder="Conteúdo"
+        value={novoPost.content}
+        onChange={(e) => setNovoPost({ ...novoPost, content: e.target.value })}
+      />
+      <button onClick={addPost}>Adicionar Post</button>
 
-        <section id="posts">
-          <h2>Posts Recentes</h2>
-          <div class="post-grid">
-            <article class="post">
-              <h3>Aprendendo o HTML</h3>
-              <p>HTML é uma base de toda página web. Entenda seu conceito e de como usá-la corretamente.</p>
-            </article>
-            <article class="post">
-              <h3>Estilos com CSS</h3>
-              <p>O CSS da uma vida ao visual do site. Como criar layout modernos cheio de cores.</p>
-            </article>
-            <article class="post">
-              <h3>Programando com o JavaScript</h3>
-              <p>JavaScript traz um comando com as páginas. Veja como criar scripts úteis e simples.</p>
-            </article>
-          </div>
-        </section>
-      </main>
-
-      <footer>
-        <p>© 2025 Meu Blog Estático. Desenvolvido por Láiza.</p>
-      </footer>
-    </>
-  )
+      <ul>
+        {posts.map((p) => (
+          <li key={p.id}>
+            <strong>{p.title}</strong>: {p.content}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
-export default App
+export default App;
