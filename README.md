@@ -1,6 +1,6 @@
 # Olá, eu sou a Láiza
 
-Sou uma desenvolvedora iniciante apaixonada por aprender novas tecnologias e resolver problemas através do código. Estou começando minha jornada no mundo do desenvolvimento e adoraria compartilhar meus aprendizados com vocês.
+Sou uma desenvolvedora iniciante. Estou começando minha jornada no mundo do desenvolvimento.
 
 ---
 
@@ -19,10 +19,12 @@ Sou uma desenvolvedora iniciante apaixonada por aprender novas tecnologias e res
 - **JavaScript** (Programação para web)
 - **Git** (Controle de versão)
 - **GitHub** (Hospedagem e colaboração de projetos)
+- **React** (interfaces e componentes)
+- **TypeScript**
 
 ---
 
-### 📫 Como me encontrar
+### Como me encontrar
 
 - **LinkedIn**: ([https://www.linkedin.com/in/seunome](https://www.linkedin.com/in/l%C3%A1iza-servin-2020a41a8/)
 - **Email**: [laizadservin@gmail.com](mailto:laizadservin@gmail.com)
