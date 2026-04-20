@@ -1,33 +1,53 @@
-# Olá, eu sou a Láiza
+#  Olá, eu sou a Laiza!
 
-Sou uma desenvolvedora iniciante. Estou começando minha jornada no mundo do desenvolvimento.
-
----
-
-###  Sobre mim
-
-- Estou aprendendo **HTML**, **CSS**, **JavaScript** e **GitHub**.
-- Gosto de criar pequenos projetos para praticar e aprender mais.
-- Estou sempre buscando melhorar minhas habilidades e expandir meus conhecimentos.
+ Técnica de Desenvolvimento de Sistemas e Aplicações  
 
 ---
 
-### Tecnologias que estou aprendendo
+##  Sobre mim
+Sou desenvolvedora focada na criação de aplicações web modernas, escaláveis e com boa experiência para o usuário.
 
-- **HTML** (Estrutura de páginas web)
-- **CSS** (Estilização de páginas)
-- **JavaScript** (Programação para web)
-- **Git** (Controle de versão)
-- **GitHub** (Hospedagem e colaboração de projetos)
-- **React** (interfaces e componentes)
-- **TypeScript**
+Atualmente atuo com desenvolvimento front-end utilizando React e TypeScript, com foco em criação de interfaces (UI), componentização e integração com APIs.
+
+Também busco constante evolução na área de tecnologia, incluindo conhecimentos em Inteligência Artificial com Google Gemini.
 
 ---
 
-### Como me encontrar
+##  Experiência Profissional
 
-- **LinkedIn**: ([https://www.linkedin.com/in/seunome](https://www.linkedin.com/in/l%C3%A1iza-servin-2020a41a8/)
-- **Email**: [laizadservin@gmail.com](mailto:laizadservin@gmail.com)
+### Técnica de Desenvolvimento de Sistemas e Aplicações (Atual)
+
+- Desenvolvimento de aplicações web com foco em performance e usabilidade  
+- Criação de interfaces modernas (UI) utilizando React e TypeScript  
+- Desenvolvimento de componentes reutilizáveis e escaláveis  
+- Aplicação de boas práticas de desenvolvimento (Clean Code)  
+- Implementação de responsividade para diferentes dispositivos  
+- Melhoria da experiência do usuário (UI/UX)  
+- Organização e estruturação de projetos front-end  
 
 ---
 
+###  Linguagens
+- JavaScript  
+- TypeScript  
+- HTML  
+- CSS  
+
+###  Frameworks e Ferramentas
+- React  
+- Node.js  
+- Git
+- Smartsheet
+
+###  Habilidades
+- Desenvolvimento Front-end  
+- Componentização  
+- Integração com APIs  
+- Responsividade  
+- UI/UX  
+- Boas práticas (Clean Code)  
+
+---
+
+## 📈 Atualmente
+Buscando evoluir cada vez mais como desenvolvedora, com foco em performance, organização de código e boas práticas de desenvolvimento.
